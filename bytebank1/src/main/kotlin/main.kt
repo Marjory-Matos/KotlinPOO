@@ -35,7 +35,12 @@ fun main() {
 
     println("nome ${gui.nome} cpf ${gui.cpf} salario ${gui.salario} bonificacao ${gui.bonificacao}")
 
+    val calculadora = CalculadoraBonificacao()
+    calculadora.registra(alex)
+    calculadora.registra(fran)
+    calculadora.registra(gui)
 
+    println("O total de bonificacao: ${calculadora.total}")
 }
 
 
