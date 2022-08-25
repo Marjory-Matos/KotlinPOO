@@ -9,7 +9,7 @@ class Gerente(
     cpf = cpf,
     salario = salario,
     senha = senha
-) {
+), Autenticavel {
 
      override val bonificacao: Double get() = bonificacao * 0.1 + salario
 
