@@ -1,8 +1,22 @@
 fun main() {
-    println("Bem vindo ao Bytebank")
+    val gerente = Gerente (
+        nome = "Alex",
+        cpf = "123456432",
+        salario = 1234.0,
+        senha = 1000
+    )
 
-    testaComportamentosConta()
+    val diretor = Diretor(
+        nome = "Diego",
+        cpf = "0382239873",
+        salario = 1230.0,
+        senha = 1236,
+        plr = 200.0
+    )
 
+    val sistema = SistemaInterno()
+    sistema.entra(gerente, 1000)
+    sistema.entra(diretor, 1236)
 }
 
 
