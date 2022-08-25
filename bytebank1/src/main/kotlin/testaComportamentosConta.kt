@@ -1,7 +1,7 @@
 fun testaComportamentosConta() {
     //instancia da classe
     //nao conseguiremos imprimir dessa forma por isso teremos que a colocar dentro de uma variavel
-    val contaAlex = Conta("Alex", 1000)
+    val contaAlex = ContaCorrente("Alex", 1000)
     //poderiamos indicar os parametros por labels, e elas nao precisam seguir a ordem do construtor:
     /* val contaAlex = Conta( numero = 1000, titular = "Alex") */
     /* contaAlex.titular = "Alex"
@@ -11,7 +11,7 @@ fun testaComportamentosConta() {
     println(contaAlex.numero)
     println(contaAlex.saldo)
 
-    val contaFran = Conta("Fran", 1001)
+    val contaFran = ContaPoupanca("Fran", 1001)
     /* contaFran.titular = "Fran"
     contaFran.numero = 1001 */
     contaFran.deposita(300.0)
