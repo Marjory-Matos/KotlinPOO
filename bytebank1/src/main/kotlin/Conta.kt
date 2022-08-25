@@ -1,6 +1,6 @@
 //temos que criar a classe no mesmo nivel de arquivo
 //esses parametros sao do construtor, pois utilizamos ele ja na classe inicial
-class Conta(var titular: String, val numero: Int) {
+open class Conta(var titular: String, val numero: Int) {
     //var titular = ""
     //var numero = 0
     var saldo = 0.0
@@ -20,7 +20,7 @@ class Conta(var titular: String, val numero: Int) {
         }
     }
 
-    fun saca(valor: Double){
+    open fun saca(valor: Double){
         if(saldo >= valor){
             saldo -= valor
         }
