@@ -11,7 +11,7 @@ class Diretor(
     salario = salario
 ) {
 
-    override val bonificacao: Double get() = salario * 0.1 + salario + plr
+    override val bonificacao: Double get() = super.bonificacao * 0.1 + salario + plr
 
     fun autentica(senha: Int): Boolean {
         if(this.senha == senha){
